@@ -6,7 +6,6 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 
 const contactSchema = z.object({
@@ -61,13 +60,13 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/bhumik-virmani",
+      href: "https://www.linkedin.com/in/bhumikvirmani17/",
       color: "hover:text-primary",
     },
     {
       icon: Code,
       label: "LeetCode",
-      href: "https://leetcode.com/bhumikvirmani",
+      href: "https://leetcode.com/u/Bhumiik_2021/",
       color: "hover:text-accent",
     },
   ];
