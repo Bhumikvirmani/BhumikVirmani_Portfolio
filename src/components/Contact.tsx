@@ -8,7 +8,7 @@ import { Textarea } from "./ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 
-const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:5000";
+const API_BASE = process.env.REACT_APP_API_BASE || "https://portfolio-backend-jf5w.onrender.com/";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
