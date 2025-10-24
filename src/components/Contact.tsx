@@ -8,6 +8,8 @@ import { Textarea } from "./ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 
+const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:5000";
+
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
   email: z.string().trim().email("Invalid email address").max(255, "Email must be less than 255 characters"),
@@ -82,11 +84,12 @@ const Contact = () => {
       // const { error } = await supabase.functions.invoke("send-contact-email", {
       //   body: validatedData,
       // });
-      const response = await fetch("http://localhost:5000/api/contact", {
+      const response = await fetch(`${API_BASE}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(validatedData),
       });
+
 
       const data = await response.json();
 
