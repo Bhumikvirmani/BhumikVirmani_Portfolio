@@ -84,7 +84,7 @@ const Contact = () => {
       // const { error } = await supabase.functions.invoke("send-contact-email", {
       //   body: validatedData,
       // });
-      const response = await fetch(`${API_BASE}/api/contact`, {
+      const response = await fetch(`${API_BASE}api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(validatedData),
