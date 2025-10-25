@@ -9,7 +9,7 @@ import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 
 // const API_BASE = process.env.REACT_APP_API_BASE || "https://portfolio-backend-jf5w.onrender.com/";
-const API_BASE = (process.env.REACT_APP_API_BASE || "https://portfolio-backend-jf5w.onrender.com").replace(/\/$/, "");
+const API_BASE = (process.env.REACT_APP_API_BASE || "https://portfolio-backend-86r2.onrender.com/").replace(/\/$/, "");
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
   email: z.string().trim().email("Invalid email address").max(255, "Email must be less than 255 characters"),
