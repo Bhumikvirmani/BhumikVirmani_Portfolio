@@ -35,19 +35,19 @@ const Projects = () => {
       ],
       gradient: "from-purple-500 to-pink-500",
     },
-    {
-      title: "Doctor Landing Page",
-      description: "A static healthcare website deployed on AWS S3 with versioning and ACL configuration. Demonstrates cloud deployment and public access configuration skills.",
-      tech: ["HTML5", "CSS3", "JavaScript", "AWS S3"],
-      link: "http://doctorlandingpage.s3-website.ap-south-1.amazonaws.com/",
-      github: "https://github.com/bhumikvirmani",
-      highlights: [
-        "Cloud deployment with AWS S3",
-        "Version control and ACL configuration",
-        "Professional healthcare design",
-      ],
-      gradient: "from-green-500 to-teal-500",
-    },
+    // {
+    //   title: "Doctor Landing Page",
+    //   description: "A static healthcare website deployed on AWS S3 with versioning and ACL configuration. Demonstrates cloud deployment and public access configuration skills.",
+    //   tech: ["HTML5", "CSS3", "JavaScript", "AWS S3"],
+    //   link: "http://doctorlandingpage.s3-website.ap-south-1.amazonaws.com/",
+    //   github: "https://github.com/bhumikvirmani",
+    //   highlights: [
+    //     "Cloud deployment with AWS S3",
+    //     "Version control and ACL configuration",
+    //     "Professional healthcare design",
+    //   ],
+    //   gradient: "from-green-500 to-teal-500",
+    // },
   ];
 
   return (
